@@ -26,3 +26,9 @@ create_user("user2", "password2")
 
 username = input("Enter your username: ")
 password = input("Enter your password: ")
+
+
+if login(username, password):
+    print("Login successful!")
+else:
+    print("Login failed. Please check your username and password.")
