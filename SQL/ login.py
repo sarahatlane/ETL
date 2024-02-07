@@ -17,3 +17,12 @@ def login(username, password):
     user = cursor.fetchone()
     conn.close()
     return user is not None
+
+
+# Example usage
+create_user("user1", "password1")
+create_user("user2", "password2")
+
+
+username = input("Enter your username: ")
+password = input("Enter your password: ")
